@@ -10,6 +10,7 @@ const dropDown = document.querySelector('.dropdown-menu');
 
 const searchInput = document.querySelector('.searchInput');
 
+
 let allCountries = [];
 
 // ================= FETCH COUNTRIES =================
@@ -19,7 +20,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,ca
     allCountries = data;
     renderCountries(allCountries);
     buildDropdown(allCountries);
-  });
+  })
 
 // ================= RENDER COUNTRIES =================
 function renderCountries(data) {
